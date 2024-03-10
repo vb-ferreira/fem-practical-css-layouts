@@ -141,10 +141,12 @@
   .date {
     color: var(--tan);
   }
+
   .club {
     color: var(--lime);
     font-size: var(--h5);
   }
+
   .button-primary {
     text-transform: uppercase;
     font-weight: 600;
@@ -157,6 +159,18 @@
     padding: 1rem 2rem;
     display: inline-block;
     white-space: nowrap;
+  }
+
+  .button-primary:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
+  }
+
+  .button-soldout {
+    color: var(--magenta50);
+    border-color: var(--magenta50);
+    background: linear-gradient(to top right, transparent calc(50% - 2px), var(--magenta50), transparent calc(50% + 2px));
+    pointer-events: none;  /* desabilita o hover */
   }
 }
 @media (min-width: 800px) {

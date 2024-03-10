@@ -37,7 +37,7 @@
   }
 
   body {
-    font-family: var(--sans-serif);
+    font-family: var(--serif);
     font-weight: 300;
     line-height: 1.75;
     background: var(--gradient);
@@ -144,6 +144,19 @@
   .club {
     color: var(--lime);
     font-size: var(--h5);
+  }
+  .button-primary {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: var(--magenta);
+    border: 2px solid var(--magenta);
+    border-radius: 5px;
+    width: 170px;
+    padding: 1rem 2rem;
+    display: inline-block;
+    white-space: nowrap;
   }
 }
 @media (min-width: 800px) {

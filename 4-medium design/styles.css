@@ -138,6 +138,22 @@
   }
 }
 @layer tour {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main h1 {
+    font-family: var(--cursive);
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  main p:nth-child(odd) {
+    justify-self: end;
+    align-self: center;
+  }
+
   p:has(.club) {
     font-family: var(--sans-serif);
   }
@@ -179,17 +195,32 @@
     pointer-events: none;  /* desabilita o hover */
   }
 }
-@media (min-width: 800px) {
-  .wrapper {
-    max-width: 800px;
-    padding: 2rem;
+@layer footer {
+  .footer {
+    text-align: center;
+  }
+
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer svg {
+    fill: var(--lime);
+  }
+
+  .footer svg:hover {
+    fill: var(--cyan);
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 800px) {
   .wrapper {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 0 2rem;
+    max-width: 600px;
   }
 }

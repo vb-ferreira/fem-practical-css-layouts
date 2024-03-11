@@ -248,6 +248,29 @@
     font-weight: 600;
   }
 }
+@layer reviews {
+  /* fix bug */
+  body {
+    height: 100vh;
+  }
+  
+  .star {
+    width: 18px;
+  }
+
+  .featured-img {
+    display: none
+  }
+
+  .reviews {
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
 @layer footer {
   .footer {
     text-align: center;

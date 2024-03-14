@@ -328,8 +328,29 @@
       justify-self: start;
       padding: 0 3rem;
     }
+  }
 
+  @media (min-width: 1000px) {
+    body {
+      /* background: var(--gradient); */
+      height: 100%;
+    }
+    
+    .reviews {
+      /* desabilita flex & grid */
+      display: block;  
+      width: 200px;
+      position: relative;
+    }
 
+    #reviews figure {
+      padding: 1rem;
+    }
+
+    .featured-img {
+      position: relative;
+      right: 1.5rem;
+    }
   }
 }
 @layer footer {
@@ -356,8 +377,8 @@
     fill: var(--cyan);
   }
 }
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .wrapper {
     max-width: 600px;
   }
-}
+} */
